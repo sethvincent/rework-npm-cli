@@ -12,6 +12,10 @@ var optimist = require('optimist')
   alias: 'o',
   desc: 'Write the bundled css to this file\n' +
         'If unspecified the output will go to stdout'
+})
+.option('sourcemap', {
+  alias: 'm',
+  desc: 'Create source maps for the bundle.'
 });
 
 var argv = optimist.argv;
@@ -26,11 +30,11 @@ if (!files || files.length === 0) {
 
 var css = '';
 
-files.forEach(function(file) {
-	var file = fs.readFileSync(path.resolve(process.cwd(), file), 'utf8');
-	css += rework(file)
-	  .use(reworkNPM())
-	  .toString();
+files.forEach(function(filename) {
+	var file = fs.readFileSync(path.resolve(process.cwd(), filename), 'utf8');
+	css += rework(file, { source: path.relative(__dirname, filename) })
+	  .use(reworkNPM(path.dirname(filename)))
+	  .toString({ sourcemap: argv.sourcemap });
 });
 
 if (argv.outfile) {
