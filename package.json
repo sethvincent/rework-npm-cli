@@ -3,7 +3,7 @@
   "description": "a command for running rework-npm in build scripts",
   "version": "0.0.1",
   "repository": {
-    "url": "git://github.com/sethvincent/rework-npm-bin.git"
+    "url": "git://github.com/sethvincent/rework-npm-cli.git"
   },
   "main": "index.js",
   "bin" : { "rework-npm" : "./index.js" },
