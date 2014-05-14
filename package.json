@@ -8,7 +8,7 @@
   "main": "index.js",
   "bin" : { "rework-npm" : "./index.js" },
   "scripts": {
-    "test": "",
+    "example": "node index example/style.css -m -o example/bundle.css && open example/index.html"
   },
   "dependencies": {
     "rework-npm": "~0.6.0",
