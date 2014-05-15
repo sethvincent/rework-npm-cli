@@ -1,7 +1,7 @@
 {
   "name": "rework-npm-cli",
   "description": "a command for running rework-npm in build scripts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "url": "git://github.com/sethvincent/rework-npm-cli.git"
   },
