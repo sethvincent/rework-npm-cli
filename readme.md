@@ -29,3 +29,11 @@ rework-npm source.css | myth | cleancss -o bundle.css
 ```
 
 Using the [myth](https://github.com/segmentio/myth) and [clean-css](https://github.com/GoalSmashers/clean-css) modules.
+
+### Use css source maps
+
+```
+rework-npm source.css -m -o bundle.css
+```
+
+The `--sourcemap` option enables sourcemaps in the bundle.css file. It can be shortened to `-m`.
