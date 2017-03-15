@@ -9,7 +9,6 @@
   "bin": {
     "rework-npm": "./index.js"
   },
-  "license": "BSD",
   "scripts": {
     "example": "node index example/style.css -m -o example/bundle.css && open example/index.html"
   },
