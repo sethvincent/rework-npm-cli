@@ -1,12 +1,14 @@
 {
   "name": "rework-npm-cli",
   "description": "a command for running rework-npm in build scripts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "url": "git://github.com/sethvincent/rework-npm-cli.git"
   },
   "main": "index.js",
-  "bin" : { "rework-npm" : "./index.js" },
+  "bin": {
+    "rework-npm": "./index.js"
+  },
   "scripts": {
     "example": "node index example/style.css -m -o example/bundle.css && open example/index.html"
   },
