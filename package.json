@@ -5,6 +5,7 @@
   "repository": {
     "url": "git://github.com/sethvincent/rework-npm-cli.git"
   },
+  "license": "BSD-2-Clause",
   "main": "index.js",
   "bin": {
     "rework-npm": "./index.js"
